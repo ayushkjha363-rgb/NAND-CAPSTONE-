@@ -1,6 +1,6 @@
 # Capstone Viva Preparation Guide (5 Minutes Viva)
 **Subject:** Nand to Tetris – I (ETCCNT301)  
-**Student:** Aryan Kumar | **Roll No:** 2501730431 | **K = 31**
+**Student:** Ayush Kumar Jha | **Roll No:** 2501010252 | **K = 52**
 
 ---
 
