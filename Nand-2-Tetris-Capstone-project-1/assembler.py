@@ -4,9 +4,9 @@ Hack Assembler in Python
 Nand to Tetris - I (ETCCNT301) - Capstone Project
 School of Engineering & Technology, K.R. Mangalam University
 
-Student: Aryan Kumar
-Roll Number: 2501730431
-Personal Number: K = 31 (31 mod 3 = 1)
+Student: Ayush Kumar Jha
+Roll Number: 2501010252
+Personal Number: K = 52 (31 mod 3 = 1)
 Extra Feature: Print a warning if the same label is written twice.
 (Also supports symbols.txt export and clear line number syntax error reporting).
 """
