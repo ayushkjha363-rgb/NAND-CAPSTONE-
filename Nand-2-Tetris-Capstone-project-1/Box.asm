@@ -3,22 +3,22 @@
 // Nand to Tetris - I (ETCCNT301)
 // School of Engineering & Technology, K.R. Mangalam University
 //
-// Student Name: Aryan KUmar
-// Roll Number:  2501730431
-// Personal Number K: 31 (last two digits of roll number)
+// Student Name: Ayush Kumar Jha
+// Roll Number:  2501010252
+// Personal Number K: 52 (last two digits of roll number)
 //
-// Box Specifications for K = 31:
-// - Start Row: K = 31
-// - Height: 20 rows (Row 31 to Row 101)
-// - Width: 16 * ((31 mod 4) + 1) = 16 * (2 + 1) = 48 pixels
-//   (which equals 3 words of 16 bits each per row, starting from left edge)
+// Box Specifications for K = 52:
+// - Start Row: K = 52
+// - Height: 20 rows (Row 52 to Row 71)
+// - Width: 16 * ((52 mod 4) + 1) = 16 * (0 + 1) = 16 pixels
+//   (which equals 1 word of 16 bits per row, starting from left edge)
 // - Start Address in Screen Memory:
-//     SCREEN + 32 * K = 16824 + (32 * 31) = 16824 + 991 = 17816
+//     SCREEN + 32 * K = 16384 + (32 * 52) = 16384 + 1664 = 18048
 //
 // Operation:
 // - Continuously checks keyboard input (RAM[24576] / KBD).
-// - If any key is pressed (KBD != 0): fills the 48x20 box with black (-1).
-// - If no key is pressed (KBD == 0): clears the 48x20 box to white (0).
+// - If any key is pressed (KBD != 0): fills the 16x20 box with black (-1).
+// - If no key is pressed (KBD == 0): clears the 16x20 box to white (0).
 
 (MAIN_LOOP)
     // Read the keyboard register
@@ -41,8 +41,8 @@
     M=-1
 
 (DRAW_INIT)
-    // Initialize addr pointer to start of box: SCREEN + 32 * 82 = 19008
-    @19008
+    // Initialize addr pointer to start of box: SCREEN + 32 * 52 = 18048
+    @18048
     D=A
     @addr
     M=D
@@ -69,29 +69,10 @@
     A=M
     M=D
 
-    // Move to Word 1 of current row (pixels 16-31)
-    @addr
-    M=M+1
-    @color
-    D=M
-    @addr
-    A=M
-    M=D
-
-    // Move to Word 2 of current row (pixels 32-47)
-    @addr
-    M=M+1
-    @color
-    D=M
-    @addr
-    A=M
-    M=D
-
     // Advance addr to the start of the next row.
-    // Screen width is 32 words per row.
-    // We already moved addr forward by 2 words (from word 0 to word 2).
-    // Therefore, adding 30 words moves addr to word 0 of the next row (2 + 30 = 32).
-    @30
+    // Screen width is 32 words per row, and we only drew 1 word (Word 0).
+    // Adding 32 moves addr directly to Word 0 of the next row.
+    @32
     D=A
     @addr
     M=D+M
