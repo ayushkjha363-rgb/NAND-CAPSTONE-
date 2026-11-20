@@ -6,21 +6,18 @@
 ---
 
 ### Student Details
-- **Student Name:** Ayush Kumar Jha
-- **Roll Number:** 2501010252
-- **Personal Number \(K\):** `52` *(Last two digits of Roll Number: 2501010252)*
-- **Calculations based on \(K = 31\):**
-  - **\(K \pmod 3\):** \(31 \pmod 3 = 2\)  
-    **Assigned Assembler Extra Feature:** *Print a warning if the same label is written twice.*
-  - **\(K \pmod 4\):** \(31 \pmod 4 = 3\)  
-  - **Box Position & Size:**
-    - **Starting Row:** Row \(K = 31\)
-    - **Height:** 20 rows (Rows 31 to 50 inclusive)
-    - **Width:** \(16 \times ((K \pmod 4) + 3) = 16 \times (2 + 1) = 48\) pixels from the left edge.
-    - **Screen Memory Words:** Hack display has 16 pixels per word. 48 pixels = 3 consecutive words (Word 0, Word 1, Word 2) at the start of each row.
-    - **Base Address:** \(\text{SCREEN} + (32 \times 38) = 16384 + 991 = \mathbf{17600}\).
-
----
+- *Student Name:* Ayush Kumar Jha
+- *Roll Number:* 2501010252
+- *Personal Number (K):* 52 *(Last two digits of Roll Number: 2501010252)*
+- *Calculations based on (K = 52):*
+  - $(K \pmod 3)$: $(52 \pmod 3 = 1)$ *Assigned Assembler Extra Feature:* *Print a warning if the same label is written twice.* *(Note: Verify if $K \pmod 3 = 1$ maps to a different extra feature in your rubric)*
+  - $(K \pmod 4)$: $(52 \pmod 4 = 0)$
+  - *Box Position & Size:*
+    - *Starting Row:* Row $(K = 52)$
+    - *Height:* 20 rows (Rows 52 to 71 inclusive)
+    - *Width:* $16 \times ((K \pmod 4) + 1) = 16 \times (0 + 1) = 16$ pixels from the left edge.
+    - *Screen Memory Words:* Hack display has 16 pixels per word. 16 pixels = 1 word (Word 0) at the start of each row.
+    - *Base Address:* $\text{SCREEN} + (32 \times 52) = 16384 + 1664 = \mathbf{18048}$.
 
 ## 1. Project Overview & System Architecture
 The objective of this capstone project is to demonstrate mastery of the bottom-up computer system stack developed in Nand to Tetris (Part I):
