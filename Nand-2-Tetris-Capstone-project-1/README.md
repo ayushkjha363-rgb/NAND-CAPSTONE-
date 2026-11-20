@@ -2,9 +2,9 @@
 **Nand to Tetris – I (ETCCNT301)**  
 School of Engineering & Technology, K.R. Mangalam University  
 
-**Student Name:* Ayush KUmar Jha 
+**Student Name:* Ayush Kumar Jha 
 **Roll Number:** 2501010252
-**Personal Number K:** 31 
+**Personal Number K:** 52
 
 ---
 
