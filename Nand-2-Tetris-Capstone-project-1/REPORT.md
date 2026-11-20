@@ -6,9 +6,9 @@
 ---
 
 ### Student Details
-- **Student Name:** Aryan Kumar
-- **Roll Number:** 2501730431
-- **Personal Number \(K\):** `31` *(Last two digits of Roll Number: 2501730431)*
+- **Student Name:** Ayush Kumar Jha
+- **Roll Number:** 2501010252
+- **Personal Number \(K\):** `52` *(Last two digits of Roll Number: 2501010252)*
 - **Calculations based on \(K = 31\):**
   - **\(K \pmod 3\):** \(31 \pmod 3 = 2\)  
     **Assigned Assembler Extra Feature:** *Print a warning if the same label is written twice.*
