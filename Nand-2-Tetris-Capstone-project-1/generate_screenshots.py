@@ -2,7 +2,7 @@
 """
 Generate high-quality CPU Emulator screenshot and test verification reports
 for Capstone Project Report.
-Student: Utkarsh Chaubey | Roll : 2501730482 | K = 82
+Student: Ayush Kumar Jha  | Roll : 2501010252 | K = 52
 """
 
 import os
